@@ -42,4 +42,3 @@ The agent handles the rest.
 ## Background
 
 Built by [@ihor_katkov](https://x.com/ihor_katkov).
-Full writeup: [Dashboards Are Dead: I Built a Calendar-Aware Health Agent with OpenClaw](https://ihorkatkov.github.io)
