@@ -52,7 +52,7 @@ If you have no prior data, track for 2 weeks first and ask your agent to compute
 ## Step 5: Configure morning briefing cron job
 
 In OpenClaw, create a cron job:
-- Schedule: `0 7 30 * * *` (7:30 AM in your timezone)
+- Schedule: `30 7 * * *` (7:30 AM — set `tz` to your timezone, e.g. `Europe/Amsterdam`)
 - Prompt: contents of `PROMPTS/morning-briefing.txt`
 - Session: isolated
 

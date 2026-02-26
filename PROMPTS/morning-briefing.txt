@@ -24,7 +24,7 @@ Based on recovery score and calendar gaps:
 - Suggest time window that fits between calendar events
 - Suggest duration
 
-5. ESSENTIALISM CHECK
+5. LOAD CHECK
 If calendar is overloaded AND recovery is 🔴 or 🟡:
 Name ONE thing to defer or cancel. Be specific.
 

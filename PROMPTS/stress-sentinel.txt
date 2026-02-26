@@ -9,7 +9,7 @@ Check:
 
 If BOTH signals are outside threshold:
 Alert with: current values, comparison to baseline, one concrete suggestion.
-Frame through essentialism: high stress = probably doing too much. What can be dropped?
+High stress = probably doing too much. Name one concrete thing that can be reduced or deferred.
 
 If metrics are normal: respond SENTINEL_OK (no message to user).
 

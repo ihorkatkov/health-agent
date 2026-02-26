@@ -3,6 +3,7 @@
 # Usage: bash TESTS/smoke-test.sh
 
 WEBHOOK_URL="${HEALTH_WEBHOOK_URL:-http://localhost:8090}"
+WORKSPACE_DIR="${OPENCLAW_WORKSPACE:-/home/node/.openclaw/workspace}"
 PASS=0
 FAIL=0
 
@@ -29,11 +30,11 @@ post_result=$(curl -sf -X POST "$WEBHOOK_URL/health-data" \
 check "Webhook accepts health data" "$post_result"
 
 # 3. Data directory exists
-DATA_DIR="/home/node/.openclaw/workspace/health/data"
+DATA_DIR="$WORKSPACE_DIR/health/data"
 [ -d "$DATA_DIR" ] && check "Data directory exists" "ok" || check "Data directory exists" "missing: $DATA_DIR"
 
 # 4. Baselines file exists
-BASELINES="/home/node/.openclaw/workspace/health/baselines.json"
+BASELINES="$WORKSPACE_DIR/health/baselines.json"
 [ -f "$BASELINES" ] && check "Baselines file exists" "ok" || check "Baselines file exists" "missing — copy from TEMPLATES/baselines.json"
 
 # 5. At least one health export exists
