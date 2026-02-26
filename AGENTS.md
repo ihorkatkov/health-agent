@@ -12,11 +12,7 @@ A personal health agent that:
 
 ## Prerequisites (verify before starting)
 
-- [ ] OpenClaw is running in Docker
 - [ ] Apple Watch + iPhone with Health Auto Export app installed ($5)
-- [ ] Tailscale running on both iPhone and the OpenClaw host
-- [ ] The OpenClaw workspace is at `~/workspace` inside the container
-
 ## Reading order
 
 1. `AGENTS.md` ← you are here
@@ -26,8 +22,7 @@ A personal health agent that:
 
 ## Non-negotiables
 
-- Health data must NOT be exposed to the public internet — Tailscale only
-- Retain a maximum of 30 days of exports; older files must be deleted
+- Health data must NOT be exposed to the public internet
 - What goes to the LLM: parsed summaries only, never raw JSON dumps
 - Baselines are personal — do not use generic thresholds
 
