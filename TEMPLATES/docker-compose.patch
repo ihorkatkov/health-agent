@@ -1,0 +1,25 @@
+# Apply this patch to your docker-compose.yml
+# Adds port 8090 and auto-starts the webhook server
+
+# 1. Add to ports section:
+#      - "8090:8090"
+
+# 2. Replace your command section with:
+#
+# command:
+#   - sh
+#   - -c
+#   - |
+#     /home/node/.openclaw/workspace/health/start-server.sh &
+#     node dist/index.js gateway --bind lan --port 18789
+
+# 3. Create workspace/health/start-server.sh:
+#
+# #!/bin/bash
+# SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+# mkdir -p "$SCRIPT_DIR/data"
+# pkill -f "node.*webhook-server.js" 2>/dev/null || true
+# sleep 1
+# cd "$SCRIPT_DIR"
+# nohup node webhook-server.js > "$SCRIPT_DIR/server.log" 2>&1 &
+# echo "Health webhook started (PID $!) on port ${HEALTH_WEBHOOK_PORT:-8090}"

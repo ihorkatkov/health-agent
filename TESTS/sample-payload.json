@@ -1,0 +1,36 @@
+{
+  "data": {
+    "metrics": [
+      {
+        "name": "resting_heart_rate",
+        "data": [{ "date": "2026-02-26 00:00:00 +0100", "qty": 52 }]
+      },
+      {
+        "name": "heart_rate_variability",
+        "data": [{ "date": "2026-02-26 07:00:00 +0100", "qty": 128 }]
+      },
+      {
+        "name": "sleep_analysis",
+        "data": [
+          {
+            "sleepStart": "2026-02-26 00:17:00 +0100",
+            "sleepEnd": "2026-02-26 08:22:00 +0100",
+            "totalSleep": 7.62,
+            "deep": 1.03,
+            "rem": 2.05,
+            "core": 4.95,
+            "awake": 0.07
+          }
+        ]
+      },
+      {
+        "name": "blood_oxygen_saturation",
+        "data": [{ "date": "2026-02-26 07:00:00 +0100", "qty": 97 }]
+      },
+      {
+        "name": "apple_sleeping_wrist_temperature",
+        "data": [{ "date": "2026-02-26 08:00:00 +0100", "qty": 35.83 }]
+      }
+    ]
+  }
+}

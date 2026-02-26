@@ -1,0 +1,27 @@
+{
+  "_note": "Edit with your personal values. Track for 2 weeks before setting thresholds.",
+  "resting_hr": {
+    "baseline": 55,
+    "alert_above": 65,
+    "unit": "bpm"
+  },
+  "hrv": {
+    "baseline": 80,
+    "alert_below": 50,
+    "unit": "ms_sdnn"
+  },
+  "spo2": {
+    "baseline": 97,
+    "alert_below": 95,
+    "unit": "percent"
+  },
+  "sleep_hours": {
+    "target": 7.5,
+    "alert_below": 7.0,
+    "unit": "hours"
+  },
+  "wrist_temp": {
+    "baseline": 36.0,
+    "note": "Individual variation is high. Use as relative signal, not absolute."
+  }
+}

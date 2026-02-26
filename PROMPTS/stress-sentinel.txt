@@ -1,0 +1,20 @@
+DAYTIME STRESS CHECK. Silent unless something is wrong.
+
+Read the most recent health export from workspace/health/data/.
+Load baselines from workspace/health/baselines.json.
+
+Check:
+- Resting HR > alert_above threshold → elevated
+- HRV < alert_below threshold (only relevant if also elevated HR) → depleted
+
+If BOTH signals are outside threshold:
+Alert with: current values, comparison to baseline, one concrete suggestion.
+Frame through essentialism: high stress = probably doing too much. What can be dropped?
+
+If metrics are normal: respond SENTINEL_OK (no message to user).
+
+Do NOT alert on:
+- HR elevated alone (could be exercise or movement)
+- HRV low alone without elevated HR
+- Sleep metrics during the day (not relevant)
+- Values within 10% of threshold (noise margin)
