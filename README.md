@@ -34,7 +34,6 @@ Tell your OpenClaw agent:
 ```
 Set up the health agent from github.com/ihorkatkov/health-agent.
 Read AGENTS.md first, then follow CHECKLIST.md step by step.
-My Tailscale IP is [YOUR_IP]. My timezone is [YOUR_TZ].
 ```
 
 The agent handles the rest.
