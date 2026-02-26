@@ -15,14 +15,11 @@ The agent sends summaries, not raw data:
 - ❌ Raw JSON exports — never sent to LLM API
 - ❌ Health history dumps
 
-If you want zero data leaving your machine: run a local Ollama model and configure OpenClaw to use it.
-
 ## Webhook hardening
 
-- Port 8090 should only be accessible via Tailscale IP
+- Port 8090 should only be accessible via Tailscale IP or your private network
 - Add `MAX_BODY_BYTES` cap in webhook-server.js (included in template)
-- Log raw parse failures to `raw-*.txt` for debugging, but do not log full body in production
-
+  
 ## Telegram delivery
 
 Morning briefings and alerts go to Telegram. The message contains:
